@@ -36,11 +36,16 @@ Plug 'nathanaelkane/vim-indent-guides'
 
 Plug 'Valloric/MatchTagAlways'
 
+Plug 'majutsushi/tagbar'
+
+Plug 'scrooloose/syntastic'
+
 call plug#end()
 
 "Give a shortcut key to NERD Tree"
 map <F2> :NERDTreeToggle<CR>
-map <F3> :vim-indent-guide<CR>
+map <F3> :IndentGuidesToggle<CR>
+map <F8> :TagbarToggle<CR>
 
 autocmd BufRead *.py setlocal colorcolumn=0
 autocmd Filetype html setlocal ts=2 sw=2 sts=2 et

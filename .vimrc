@@ -13,6 +13,8 @@ match ExtraWhitespace /\s\+$/
 
 "Ignore compiled files
 let NERDTreeIgnore = ['\.pyc$']
+let g:indentLine_leadingSpaceChar = '·'
+let g:indentLine_leadingSpaceEnabled = 1
 
 call plug#begin('~/.vim/plugged')
 
@@ -39,6 +41,8 @@ Plug 'Valloric/MatchTagAlways'
 Plug 'majutsushi/tagbar'
 
 Plug 'scrooloose/syntastic'
+
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
 

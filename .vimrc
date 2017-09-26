@@ -45,11 +45,12 @@ Plug 'scrooloose/syntastic'
 
 Plug 'Yggdroot/indentLine'
 
+Plug 'posva/vim-vue'
+
 call plug#end()
 
 "Give a shortcut key to NERD Tree"
 map <F2> :NERDTreeToggle<CR>
-map <F3> :IndentGuidesToggle<CR>
 map <F8> :TagbarToggle<CR>
 
 autocmd BufRead *.py setlocal colorcolumn=0

@@ -41,8 +41,6 @@ Plug 'Valloric/MatchTagAlways'
 
 Plug 'majutsushi/tagbar'
 
-Plug 'scrooloose/syntastic'
-
 Plug 'Yggdroot/indentLine'
 
 Plug 'posva/vim-vue'
@@ -55,3 +53,5 @@ map <F8> :TagbarToggle<CR>
 
 autocmd BufRead *.py setlocal colorcolumn=0
 autocmd Filetype html setlocal ts=2 sw=2 sts=2 et
+
+set background=dark

@@ -16,6 +16,7 @@ let NERDTreeIgnore = ['\.pyc$']
 let g:indentLine_leadingSpaceChar = '·'
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_color_term = 239
+let g:ycm_server_python_interpreter = '/usr/bin/python'
 
 call plug#begin('~/.vim/plugged')
 
@@ -44,6 +45,8 @@ Plug 'majutsushi/tagbar'
 Plug 'Yggdroot/indentLine'
 
 Plug 'posva/vim-vue'
+
+Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 

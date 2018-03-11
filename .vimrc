@@ -17,6 +17,7 @@ let g:indentLine_leadingSpaceChar = '·'
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_color_term = 239
 let g:ycm_server_python_interpreter = '/usr/bin/python'
+let g:ctrlp_custom_ignore = 'node_modules'
 
 call plug#begin('~/.vim/plugged')
 
@@ -47,6 +48,14 @@ Plug 'Yggdroot/indentLine'
 Plug 'posva/vim-vue'
 
 Plug 'Valloric/YouCompleteMe'
+
+Plug 'tmhedberg/SimpylFold'
+
+Plug 'pangloss/vim-javascript'
+
+Plug 'othree/html5.vim'
+
+Plug 'hail2u/vim-css3-syntax'
 
 call plug#end()
 

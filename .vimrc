@@ -1,3 +1,6 @@
+set encoding=utf8
+set guifont=DroidSansMono\ Nerd\ Font\ 11
+
 "Always show line numbers
 set number
 
@@ -54,6 +57,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'othree/html5.vim'
 
 Plug 'hail2u/vim-css3-syntax'
+
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 

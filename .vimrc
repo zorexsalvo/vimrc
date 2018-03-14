@@ -69,4 +69,5 @@ map <F8> :TagbarToggle<CR>
 autocmd BufRead *.py setlocal colorcolumn=0
 autocmd Filetype html setlocal ts=2 sw=2 sts=2 et
 
+set fillchars+=vert:\ 
 set background=dark

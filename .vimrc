@@ -49,8 +49,6 @@ Plug 'posva/vim-vue'
 
 Plug 'Valloric/YouCompleteMe'
 
-Plug 'tmhedberg/SimpylFold'
-
 Plug 'pangloss/vim-javascript'
 
 Plug 'othree/html5.vim'

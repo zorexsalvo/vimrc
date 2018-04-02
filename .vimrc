@@ -10,6 +10,12 @@ set wrap!
 "Set 4 spaces by default
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
+"Set 2 spaces on html, js, json
+autocmd Filetype html setlocal ts=2 sw=2 expandtab smarttab
+autocmd Filetype javascript setlocal ts=2 sw=2 expandtab smarttab
+autocmd Filetype json setlocal ts=2 sw=2 expandtab smarttab
+autocmd Filetype vue setlocal ts=2 sw=2 expandtab smarttab
+
 "Set highlight for trailing whitespaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
@@ -62,6 +68,7 @@ Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
 
 Plug 'ryanoasis/vim-devicons'
+
 
 call plug#end()
 

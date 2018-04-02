@@ -21,6 +21,9 @@ let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_color_term = 239
 let g:ycm_server_python_interpreter = '/usr/bin/python'
 let g:ctrlp_custom_ignore = 'node_modules\|venv'
+let g:webdevicons_conceal_nerdtree_brackets = 0
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {}
+let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['vue'] = 'V'
 
 call plug#begin('~/.vim/plugged')
 

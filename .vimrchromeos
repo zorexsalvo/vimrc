@@ -59,7 +59,7 @@ Plug 'Yggdroot/indentLine'
 
 Plug 'posva/vim-vue'
 
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 
 Plug 'pangloss/vim-javascript'
 
@@ -72,6 +72,10 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'mindriot101/vim-yapf'
 
 Plug 'mxw/vim-jsx'
+
+Plug 'w0rp/ale'
+
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 call plug#end()
 
@@ -92,3 +96,10 @@ setlocal equalprg=Yapf
 :nnoremap <leader>y :Yapf<cr>
 :nnoremap <leader>g :GitGutterAll<cr>
 set splitbelow
+
+let g:ale_echo_msg_format = '%linter% says %s'
+let g:ale_linters = {'javascript': ['eslint']}
+
+map  <C-l> :tabn<CR>
+map  <C-h> :tabp<CR>
+map  <C-n> :tabnew<CR>

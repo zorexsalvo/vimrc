@@ -69,6 +69,9 @@ Plug 'hail2u/vim-css3-syntax'
 
 Plug 'ryanoasis/vim-devicons'
 
+" Fuzzy finder plugin
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -81,3 +84,15 @@ autocmd Filetype html setlocal ts=2 sw=2 sts=2 et
 
 set fillchars+=vert:\ 
 set background=dark
+
+" FZF remap
+nnoremap <F2> :FZF <return>
+" Remap Splits
+" Move to down split
+nnoremap <S-J> <C-W><C-J>
+" Move to Top Split
+nnoremap <S-K> <C-W><C-K>
+" Move to right split
+nnoremap <S-L> <C-W><C-L>
+" Move to left split
+nnoremap <S-H> <C-W><C-H>

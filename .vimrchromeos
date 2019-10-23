@@ -77,6 +77,10 @@ Plug 'w0rp/ale'
 
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
+" Fuzzy finder plugin
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
 
 "Give a shortcut key to NERD Tree"
@@ -103,3 +107,17 @@ let g:ale_linters = {'javascript': ['eslint']}
 map  <C-l> :tabn<CR>
 map  <C-h> :tabp<CR>
 map  <C-n> :tabnew<CR>
+
+" FZF remap
+nnoremap <F3> :FZF <return>
+
+" Remap Splits
+" Move to down split
+nnoremap <S-J> <C-W><C-J>
+" Move to Top Split
+nnoremap <S-K> <C-W><C-K>
+" Move to right split
+nnoremap <S-L> <C-W><C-L>
+" Move to left split
+nnoremap <S-H> <C-W><C-H>
+
